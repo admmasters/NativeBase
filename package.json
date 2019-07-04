@@ -22,7 +22,8 @@
     "react-native-checkbox": "~1.0.8",
     "react-native-easy-grid": "0.1.5",
     "react-native-keyboard-aware-scroll-view": "0.2.0",
-    "react-native-vector-icons": "2.x.x"
+    "react-native-vector-icons": "2.x.x",
+    "snyk": "^1.189.0"
   },
   "peerDependencies": {
     "react-native": ">=0.26.0",
@@ -50,5 +51,10 @@
   "bugs": {
     "url": "https://github.com/GeekyAnts/NativeBase/issues"
   },
-  "homepage": "https://github.com/GeekyAnts/NativeBase#readme"
+  "homepage": "https://github.com/GeekyAnts/NativeBase#readme",
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
